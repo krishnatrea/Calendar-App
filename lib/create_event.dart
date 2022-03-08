@@ -2,7 +2,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_calander/calander_events.dart';
+import 'package:flutter_calander/calendar_events.dart';
 import 'package:flutter_calander/main.dart';
 import 'package:intl/intl.dart';
 import 'package:random_color/random_color.dart';

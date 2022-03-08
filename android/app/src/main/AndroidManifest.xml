@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.flutter_calander">
+    package="com.example.flutter_calendar">
    <application
-        android:label="flutter_calander"
+        android:label="flutter_calendar"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

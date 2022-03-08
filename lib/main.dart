@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_calander/calander_events.dart';
+import 'package:flutter_calander/calendar_events.dart';
 import 'package:flutter_calander/create_event.dart';
-import 'package:flutter_calander/edit_calander.dart';
+import 'package:flutter_calander/edit_calendar.dart';
 import 'package:intl/intl.dart';
 import 'package:syncfusion_flutter_calendar/calendar.dart';
 
@@ -72,7 +72,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  IconData calanderIcon = Icons.calendar_view_month;
+  IconData calendarIcon = Icons.calendar_view_month;
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -114,24 +114,24 @@ class _MyHomePageState extends State<MyHomePage> {
                 _controller.view = value ?? CalendarView.month;
                 switch (value) {
                   case CalendarView.month:
-                    calanderIcon = Icons.calendar_today;
+                    calendarIcon = Icons.calendar_today;
                     break;
                   case CalendarView.week:
-                    calanderIcon = Icons.calendar_view_week;
+                    calendarIcon = Icons.calendar_view_week;
                     break;
                   case CalendarView.day:
-                    calanderIcon = Icons.calendar_view_day;
+                    calendarIcon = Icons.calendar_view_day;
                     break;
 
                   case CalendarView.workWeek:
-                    calanderIcon = Icons.calendar_view_week_rounded;
+                    calendarIcon = Icons.calendar_view_week_rounded;
                     break;
                   default:
-                    calanderIcon = Icons.calendar_view_month;
+                    calendarIcon = Icons.calendar_view_month;
                 }
               });
             },
-            icon: Icon(calanderIcon, color: Colors.white),
+            icon: Icon(calendarIcon, color: Colors.white),
           ),
         ],
       ),
